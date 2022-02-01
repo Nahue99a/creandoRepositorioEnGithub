@@ -1,0 +1,281 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body
+{
+    min-height: 80vh;
+    background-image: linear-gradient(rgb(124, 123, 121), rgba(255, 255, 255, 0.712));
+}
+
+header{
+    text-align: center;
+    border: solid 1px black;
+    min-height: 10vh;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.712), rgb(124, 123, 121));
+    font-size: 20px;
+}
+
+h1{
+    text-align: start;
+}
+
+h2{
+    text-align: center;
+    margin-top: 2%;
+    text-decoration: underline double;
+    font-size: 50px;
+}
+
+.titulos
+{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.logo{
+    width: 4%;
+    position: absolute;
+    left: 90%;
+    top: 1vh;
+}
+.nav{
+    list-style: none;
+    margin-top: 10px;
+    font-size: 0px;
+    
+}
+
+.menu{
+    display: inline-block;
+    margin-left: 10px;
+    width: 20%;
+    position: relative;
+    font-size: 14px;
+}
+
+.nav ul{
+    position: absolute;
+    display: none;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.712), rgb(124, 123, 121));
+    border: solid 1px black;
+    z-index: 10000000;
+}
+
+.nav li{
+    float:auto;
+    border: solid 1px black;
+}
+
+.nav li a:hover{
+    text-decoration-line: underline;
+}
+
+.nav ul li{
+    display: block;
+    margin-right: 250px;
+    border: none;
+    text-align:left;
+    
+}
+
+.nav li:hover ul{
+    display: block;
+    margin-left: 50%;
+}
+
+
+.enlaces{
+    color: black;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.carruselContenedor
+{
+    display: flex;
+    overflow-x: scroll;
+    border: solid 2px;
+    border-radius: 10px;
+    position: relative;
+    left: 0%;
+    margin-top: 1%;
+    z-index: 1;
+    
+}
+
+.carrusel__imagen
+{
+   width: 150%;
+   height: 500px;
+   object-fit: cover;
+   margin: auto;
+   transition: all 2s;
+}
+
+.carrusel__imagen:hover{
+    width: 200%;
+    z-index: 1000;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+#modelo:hover{
+    z-index: 10000;
+}
+
+
+.carruselContenedor::-webkit-scrollbar{
+    width: 20px;
+    
+}
+
+.carruselContenedor::-webkit-scrollbar-track{
+    background: rgb(124, 123, 121);
+}
+
+.carruselContenedor::-webkit-scrollbar-thumb{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.712), rgb(124, 123, 121));
+    border-radius: 10px;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.gridContainer{
+    margin: 2%;
+    margin-top: 1%;
+    border: solid 1px black;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 800px 500px;
+}
+
+.gridItem{
+    border: solid 1px black;
+}
+
+.uno{
+    background-color: rosybrown;
+    grid-column-start:1 ;
+    grid-column-end: 5; 
+}
+
+.dos{
+    background-color: royalblue;
+    grid-column: 1/3;
+}
+
+.tres{
+    background-color: salmon;
+    grid-column: 3/5;
+}
+
+.modeloNuevo
+{
+    width:100%;
+    height: 100%;
+    transition: all 2s;
+}
+
+.modeloNuevo:hover{
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+#novedades
+{
+    width: 100%;
+    height: 100%;
+}
+
+.descripcion
+{
+    text-align: center;
+    font-size: 20px;
+    border: double;
+    border-radius: 2%;
+    margin:  1%;
+    width: fit-content;
+}
+
+.tituloFormulario
+{
+    font-size: 50px;
+    text-decoration: underline;
+    margin-top: 1%;
+}
+
+#formulario
+{
+    text-align: center;
+    border: double;
+    border-radius: 5%;
+    font-size: 30px;
+}
+
+.contacto
+{
+    text-align: center;
+    border: double;
+    border-radius: 5%;
+    font-size: 20px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+footer{
+    min-height: 5vh;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.712), rgb(124, 123, 121));
+    text-align: center;
+}
+
+footer ul li{
+    margin-top: 5px;
+}
+#whatsapp:hover{
+    color:#0fad44 ;
+}
+
+#facebook:hover{
+    color: #3b5998;
+}
+
+#instagram:hover{
+    color: rgb(110, 31, 110);
+}
+
+#youtube:hover{
+    color: red;
+}
+
+
+@media only screen and (max-width: 500px)
+{
+
+    header{
+        font-size: 12px;
+    }
+
+    .logo{
+        width: 50px;
+        width: 10%;
+    }
+
+    .enlaces
+    {
+        font-size: 12px;
+    }
+
+    h2{
+        font-size: 32px;
+    }
+
+    .carruselContenedor
+    {
+        width: 95%;
+    }
+    
+    
+}
